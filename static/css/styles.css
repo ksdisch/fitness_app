@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Playfair`', serif;
+  font-size: 2em;
+}
+
+h1 {
+  color: #FFD124;
+  font-family: 'Arial';
+  font-size: 5.625rem;
+  /* 100% = 16px = 1em */
+  /* rem = root em which tells website to ignore all the parent sizing, and only size the font according to this line of code */
+  line-height: 2;
+  margin-top: 50px auto 0 auto;
+}
+
+h2 {
+  color: #FFD124;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #CDBE78;
+}
+p {
+  font-size: 1rem;
+}
+
+a {
+  color: #CDBE78;
+}
+
+hr {
+  border-color: #DFDFDE;
+  border-style: dotted none none none;
+  border-width: 7px;
+  height: 0px;
+  width: 5%;
+
+}
+
+.top-container {
+  background-color: #00AFC1;
+  padding-top: 100px;
+  position: relative;
+}
+
+.middle-container {
+  background-color: #0093AB;
+  position: relative;
+}
+
+.bottom-container {
+  background-color: #006778;
+  position: relative;
+}
+
+.top-cloud {
+  position: absolute;
+  top: 50px;
+  right: 300px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+
+.profile-pic {
+  width: 25%;
+}
+
+.python-pic {
+  float: left;
+  margin-right: 30px;
+  width: 25%;
+}
+
+.web-dev-pic {
+  float: right;
+  margin-left: 30px;
+  width: 25%;
+}
+
+.prob-solving-pic {
+  float: left;
+  margin-right: 30px;
+  width: 25%;
+}
+
+.profile {
+  line-height: 2;
+  margin: auto auto 100px auto;
+  padding-top: 100px;
+  width: 50%;
+}
+
+.skill-row {
+  line-height: 2;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  width: 50%;
+}
+.contact-me {
+  padding-bottom: 75px;
+}
+
+.btn {
+  background: #ffffff;
+  background-image: -webkit-linear-gradient(top, #ffffff, #c0c9cf);
+  background-image: -moz-linear-gradient(top, #ffffff, #c0c9cf);
+  background-image: -ms-linear-gradient(top, #ffffff, #c0c9cf);
+  background-image: -o-linear-gradient(top, #ffffff, #c0c9cf);
+  background-image: linear-gradient(to bottom, #ffffff, #c0c9cf);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #3498db;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #ffffff;
+  background-image: -webkit-linear-gradient(top, #ffffff, #3498db);
+  background-image: -moz-linear-gradient(top, #ffffff, #3498db);
+  background-image: -ms-linear-gradient(top, #ffffff, #3498db);
+  background-image: -o-linear-gradient(top, #ffffff, #3498db);
+  background-image: linear-gradient(to bottom, #ffffff, #3498db);
+  text-decoration: none;
+}
