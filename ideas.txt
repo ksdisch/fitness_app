@@ -1,0 +1,12 @@
+IDEAS FOR FEATURES/FUNCTIONS OF THE APP
+
+1. Allow users to input workouts
+
+
+2. Log and store the workouts 
+
+
+3. Allow users to create workout templates / plans
+
+
+4. Generate analyses of workouts (visualizations, suggestions, etc.)
