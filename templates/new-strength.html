@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>New Strength Workout</title>
+        <link rel="icon" href="static/favicon.ico">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+    
+        <!-- CSS Stylesheets -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="../static/css/styles.css">
+    
+        <!-- Font Awesome -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    
+        <!-- Bootstrap Scripts -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <header>New Strength Training Workout</header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Upper Body -->
+            <div class="col-md-4">
+                <div class="form-wrapper">
+                    <div>
+                        <!-- Creating a form element, upper is the name of the field as it was defined in app.py -->
+                        {{ upper_form.exercise(class_='form-control', placeholder='Select')}}
+                    </div>
+                    <form method="POST">
+                        <fieldset class="form-field">
+                            {{ upper_form.csrf_token }}
+                            <!-- Get the exercise -->
+                            {{ upper_form.exercise(class_='form-control') }}
+                        </fieldset>
+
+                        <fieldset class="form-field">
+                            <!-- Get number of sets -->
+                            <h4>Sets Completed</h4>
+                            {{ upper_form.num_sets(class_='form-control') }}
+                        </fieldset>
+                        <fieldset class="form-field">
+                            <!-- Get Reps and Weight for each set -->
+                            <h4>1st Set</h4>
+                            <p>Reps</p>                            
+                            {{ upper_form.set_1_reps(class_='form-control') }}
+                            <p>Weight</p>
+                            {{ upper_form.set_1_weight(class_='form-control') }}
+                        </fieldset>
+                        <fieldset class="form-field">
+                            <h4>2nd Set</h4>
+                            <p>Reps</p>  
+                            {{ upper_form.set_2_reps(class_='form-control') }}
+                            <p>Weight</p>
+                            {{ upper_form.set_2_weight(class_='form-control') }}
+                        </fieldset>
+                        <fieldset class="form-field">
+                            <h4>3rd Set</h4>
+                            <p>Reps</p>  
+                            {{ upper_form.set_3_reps(class_='form-control') }}
+                            <p>Weight</p>
+                            {{ upper_form.set_3_weight(class_='form-control') }}
+                        </fieldset>
+
+
+                            <!-- Submit -->
+                            
+                        </fieldset>
+                        <!-- Submit -->
+                        <input type="submit" value="Log Exercise">
+                        </form>
+                </div>
+            </div>
+            <!-- Lower Body -->
+            <div class="col-md-4">
+                <div class="form-wrapper">
+                    <div>
+                        <!-- Creating a form element, upper is the name of the field as it was defined in app.py -->
+                        {{ upper_form.exercise(class_='form-control', placeholder='Select')}}
+                    </div>
+                    <form method="POST">
+                        <fieldset class="form-field">
+                            {{ upper_form.csrf_token }}
+                            {{ upper_form.exercise(class_='form-control') }}
+                            
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <!-- Abs -->
+            <div class="col-md-4">
+                <div class="form-wrapper">
+                    <div>
+                        <!-- Creating a form element, upper is the name of the field as it was defined in app.py -->
+                        {{ upper_form.exercise(class_='form-control', placeholder='Select')}}
+                    </div>
+                    <form method="POST">
+                        <fieldset class="form-field">
+                            {{ upper_form.csrf_token }}
+                            {{ upper_form.exercise(class_='form-control') }}
+                            
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+<footer>
+
+</footer>
+
+</html>
